@@ -1,0 +1,23 @@
+{
+	"compilerOptions": {
+		"target": "es5",
+		"module": "esnext",
+		"lib": ["dom", "es2017"],
+		"jsx": "react-jsx",
+		"sourceMap": true,
+		"rootDir": ".",
+		"outDir": "dist",
+		"strict": true, // Enable all strict type checking options
+		"moduleResolution": "node",
+		"allowSyntheticDefaultImports": true, // Allow default imports from modules with no default export
+		"esModuleInterop": true, // Disables namespace imports (import * as fs from "fs") and enables CJS/AMD/UMD style imports (import fs from "fs")
+		"skipLibCheck": true, // Skip type checking of all declaration files
+		"skipDefaultLibCheck": true, // Skip type checking .d.ts files that are included with TypeScript
+		"forceConsistentCasingInFileNames": true, // Disallow inconsistently-cased references to the same file.
+		"declaration": true, // Generate corresponding .d.ts file
+		"declarationDir": "types",
+		"resolveJsonModule": true
+	},
+	"include": ["src/**/*", "rollup.config.ts"],
+	"exclude": ["node_modules", "dist", "src/**/*.test.ts"]
+}
