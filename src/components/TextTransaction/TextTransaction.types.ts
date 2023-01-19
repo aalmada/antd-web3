@@ -1,7 +1,8 @@
-import { BlockExplorer } from "../../types/BlockExplorer";
+import { BlockExplorer, Hash } from "../../types";
 
 export type TextTransactionProps = {
-	hash: `0x${string}`;
+	hash: Hash;
 	length?: number;
 	blockExplorer?: BlockExplorer;
+	isLoading?: boolean;
 };

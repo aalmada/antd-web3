@@ -1,7 +1,6 @@
-export const truncate = (
-	address: `0x${string}` | undefined,
-	length: number
-) => {
+import { Address } from "../types";
+
+export const truncate = (address: Address | undefined, length: number) => {
 	if (!address || address.length <= length) return address;
 
 	return (
@@ -9,5 +8,5 @@ export const truncate = (
 	);
 };
 
-export const addressToSeed = (address: `0x${string}` | undefined) =>
+export const addressToSeed = (address: Address | undefined) =>
 	address ? parseInt(address.slice(0, 10)) : 0;

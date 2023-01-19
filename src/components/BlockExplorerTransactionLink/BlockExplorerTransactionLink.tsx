@@ -5,7 +5,7 @@ const BlockExplorerTransactionLink = ({
 	hash,
 	blockExplorer,
 	children,
-}: BlockExplorerTransactionLinkProps) =>
+}: React.PropsWithChildren<BlockExplorerTransactionLinkProps>) =>
 	blockExplorer ? (
 		<ExternalLink href={`${blockExplorer.url}/tx/${hash}`}>
 			{children}

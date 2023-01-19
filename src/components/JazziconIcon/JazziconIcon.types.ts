@@ -2,6 +2,7 @@ import {
 	CustomIconComponentProps,
 	IconBaseProps,
 } from "@ant-design/icons/lib/components/Icon";
+import { Address } from "../../types";
 
 export interface IconComponentProps extends IconBaseProps {
 	component?: React.ComponentType<
@@ -10,5 +11,5 @@ export interface IconComponentProps extends IconBaseProps {
 }
 
 export type JazziconIconProps = IconComponentProps & {
-	address: `0x${string}` | undefined;
+	address: Address | undefined;
 };

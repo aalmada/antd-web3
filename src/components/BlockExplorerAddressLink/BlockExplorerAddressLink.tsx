@@ -5,7 +5,7 @@ const BlockExplorerAddressLink = ({
 	address,
 	blockExplorer,
 	children,
-}: BlockExplorerAddressLinkProps) => {
+}: React.PropsWithChildren<BlockExplorerAddressLinkProps>) => {
 	return blockExplorer ? (
 		<ExternalLink href={`${blockExplorer.url}/address/${address}`}>
 			{children}
