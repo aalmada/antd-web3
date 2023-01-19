@@ -1,6 +1,6 @@
 {
 	"name": "antd-web3",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "A collection of components for web3 frontend development based on antd framewrk.",
 	"author": "Antão Almada",
 	"license": "MIT",
@@ -51,18 +51,12 @@
 		"tslib": "^2.4.1",
 		"typescript": "^4.9.4"
 	},
+	"types": "dist/index.d.ts",
 	"exports": {
 		"./package.json": "./package.json",
 		".": {
-			"types": "./index.d.ts",
-			"import": "./index.js"
-		}
-	},
-	"typesVersions": {
-		"*": {
-			"*": [
-				"./*.d.ts"
-			]
+			"types": "./dist/index.d.ts",
+			"import": "./dist/esm/index.js"
 		}
 	},
 	"files": [
